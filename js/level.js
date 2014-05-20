@@ -23,18 +23,8 @@
           [0,0,1,1,1,1,1,1,1,1,0],
           [0,0,1,1,1,1,1,1,1,1,0],
           [0,0,1,1,1,1,1,1,1,1,0],
-          [0,0,1,1,1,1,1,1,1,1,0]] 
-     3:  [[0,0,0,0,0,0,0,0,0,0,0],
-          [0,0,0,0,0,0,0,0,0,0,0],
-          [0,0,0,0,0,0,0,0,0,0,0],
-          [0,0,0,0,0,0,0,0,0,0,0],
-          [0,2,2,2,2,2,2,2,2,2,0],
-          [0,2,2,2,2,2,2,2,2,2,0],
-          [0,2,2,2,2,2,2,2,2,2,0],
-          [0,2,2,2,2,2,2,2,2,2,0],
-          [0,2,2,2,2,2,2,2,2,2,0],
-          [0,0,1,1,1,1,1,1,1,0,0],
-          [0,0,1,1,1,1,1,1,1,0,0]] };
+          [0,0,1,1,1,1,1,1,1,1,0]] };
+     
 		  
 		  //This is the co-ordinates of the images the game uses from the sprite page.
 
@@ -48,7 +38,7 @@
  		//This is the start page for the game itself.
 		
   function startGame() {
-    var screen = new GameScreen("Space Incagers","press space to start",
+    var screen = new GameScreen("Space Wars","press space to start",
                                  function() {
                                      Game.loadBoard(new GameBoard(1));
                                  });
