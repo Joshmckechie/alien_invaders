@@ -41,8 +41,8 @@
 		  //This is the co-ordinates of the images the game uses from the sprite page.
 
   var spriteData = {
-    'alien1': { sx: 0,  sy: 0,  w: 23, h: 18, cls: Alien, frames: 2 },
-    'alien2': { sx: 0,  sy: 18, w: 23, h: 18, cls: Alien, frames: 2 },
+    'alien1': { sx: 257,  sy: 81,  w: 15, h: 17, cls: Alien, frames: 2 },
+    'alien2': { sx: 128,  sy: 96, w: 17, h: 16, cls: Alien, frames: 2 },
     'player': { sx: 64,  sy: 0, w: 17, h: 17, cls: Player },
     'missile': { sx: 86,  sy: 34, w: 5,  h: 11, cls: Missile }
   }
