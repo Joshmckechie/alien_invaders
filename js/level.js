@@ -43,7 +43,7 @@
   var spriteData = {
     'alien1': { sx: 0,  sy: 0,  w: 23, h: 18, cls: Alien, frames: 2 },
     'alien2': { sx: 0,  sy: 18, w: 23, h: 18, cls: Alien, frames: 2 },
-    'player': { sx: 0,  sy: 36, w: 26, h: 17, cls: Player },
+    'player': { sx: 64,  sy: 0, w: 17, h: 17, cls: Player },
     'missile': { sx: 86,  sy: 34, w: 5,  h: 11, cls: Missile }
   }
 
