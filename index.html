@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+ 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Alien Invaders</title>
   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
   <script src='js/engine.js'></script>
   <script src='js/game.js'></script>
   <script src='js/level.js'></script>
+   
 
   <style>
-      #gameboard { background-color:black; }
+      #gameboard { background-image: url(http://3.bp.blogspot.com/_FRfkQb_5Yqk/S6xz4Th7HUI/AAAAAAAAAhk/Lmj66ykiwbI/s1600/stars.jpg); }
       #game-wrapper { margin:0 auto; width: 800px; }
      @font-face {
     font-family: 'sf_distant_galaxyregular';
@@ -21,6 +23,11 @@
     font-weight: normal;
     font-style: normal;
 }
+    .h1 p {
+      font-family: 'Montserrat', sans-serif;
+
+
+    }
   </style>
 
 </head>
@@ -29,8 +36,13 @@
     <canvas id='gameboard' width='800' height='600'></canvas>
   </div>
 
+  
+  <div class='jumbotron'>
+    <div class="container">
   <h1>A short time ago, in a galaxy not too far from us, there were...</h1>
 
     <p>The objective of the game is to defeat all of the stormtroopers and Sith Lords who have lay siege to earth and you're the old Jedi left to defend it. May the force be with you!</p>
+  </div>
+  </div>
 </body>
 </html>
