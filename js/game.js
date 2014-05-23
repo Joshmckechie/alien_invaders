@@ -3,8 +3,8 @@
 
 var AlienFlock = function AlienFlock() {
   this.invulnrable = true;
-  this.dx = 4; this.dy = 4;
-  this.hit = 2; this.lastHit = 2;
+  this.dx = 15; this.dy = 15;
+  this.hit = 8; this.lastHit = 8;
   this.speed = 2;
 
   this.draw = function() {};

@@ -1,5 +1,5 @@
 
-//This is where you can chande the number of aliens in the different levels by using 1 and 2 intergers which correlate to the different alien images.
+//This is where you can change the number of aliens in the different levels by using 1 and 2 intergers which correlate to the different alien images.
 
   var levelData = { 
      1:  [[0,0,0,0,0,0,0,0,0,0,0],
@@ -41,10 +41,10 @@
 		  //This is the co-ordinates of the images the game uses from the sprite page.
 
   var spriteData = {
-    'alien1': { sx: 257,  sy: 81,  w: 15, h: 17, cls: Alien, frames: 2 },
-    'alien2': { sx: 128,  sy: 96, w: 17, h: 16, cls: Alien, frames: 2 },
-    'player': { sx: 64,  sy: 0, w: 17, h: 17, cls: Player },
-    'missile': { sx: 86,  sy: 34, w: 5,  h: 11, cls: Missile }
+    'alien1': { sx: 514,  sy: 162,  w: 30, h: 34, cls: Alien, frames: 2 },
+    'alien2': { sx: 256,  sy: 192, w: 34, h: 32, cls: Alien, frames: 2 },
+    'player': { sx: 128,  sy: 0, w: 34, h: 34, cls: Player },
+    'missile': { sx: 172,  sy: 68, w: 10,  h: 21, cls: Missile }
   }
 
  		//This is the start page for the game itself.
