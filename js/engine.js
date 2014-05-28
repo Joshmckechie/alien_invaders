@@ -56,7 +56,7 @@ var GameScreen = function GameScreen(text,text2,callback) {
     canvas.clearRect(0,0,Game.width,Game.height);
     canvas.font = "bold 40px sf distant galaxy";
     var measure = canvas.measureText(text);  
-    canvas.fillStyle = "#FFFFFF";
+    canvas.fillStyle = "#FFFFFF ";
     canvas.fillText(text,Game.width/2 - measure.width/2,Game.height/2);
     canvas.font = "bold 20px sf distant galaxy";
     var measure2 = canvas.measureText(text2);

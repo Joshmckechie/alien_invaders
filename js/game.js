@@ -125,7 +125,7 @@ Player.prototype.step = function(dt) {
   if(this.x > Game.width-this.w) this.x = Game.width-this.w;
 
   this.reloading--;
-    
+     
     
 //This is how many missiles you can fire before reloading
     
