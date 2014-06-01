@@ -26,7 +26,7 @@ var Game = new function() {
   this.loop = function() { 
     Game.board.step(30/1000); 
     Game.board.render(Game.canvas);
-    setTimeout(Game.loop,30);
+    setTimeout(Game.loop,20);
   };
 };
 
@@ -37,7 +37,7 @@ var Sprites = new function() {
     this.map = sprite_data;
     this.image = new Image();
     this.image.onload = callback;
-    this.image.src = 'images/starwars.png';
+    this.image.src = 'images/Sprites.png';
   };
 
   this.draw = function(canvas,sprite,x,y,frame) {
@@ -56,7 +56,7 @@ var GameScreen = function GameScreen(text,text2,callback) {
     canvas.clearRect(0,0,Game.width,Game.height);
     canvas.font = "bold 40px sf distant galaxy";
     var measure = canvas.measureText(text);  
-    canvas.fillStyle = "#FFFFFF ";
+    canvas.fillStyle = "#f3ed15";
     canvas.fillText(text,Game.width/2 - measure.width/2,Game.height/2);
     canvas.font = "bold 20px sf distant galaxy";
     var measure2 = canvas.measureText(text2);
@@ -190,7 +190,7 @@ var GameAudio = new function() {
     for (a=0;a<audio_channels.length;a++) {
       thistime = new Date();
       if (audio_channels[a]['finished'] < thistime.getTime()) {	
-        audio_channels[a]['finished'] = thistime.getTime() + this.sounds[s].duration*1000;
+        audio_channels[a]['finished'] = thistime.getTime() + this.sounds[s].duration*100;
         audio_channels[a]['channel'].src = this.sounds[s].src;
         audio_channels[a]['channel'].load();
         audio_channels[a]['channel'].play();

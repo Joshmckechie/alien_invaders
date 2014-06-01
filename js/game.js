@@ -92,7 +92,7 @@ Alien.prototype.step = function(dt) {
 Alien.prototype.fireSometimes = function() {
       if(Math.random()*100 < 30) {
         this.board.addSprite('missile',this.x + this.w/2 - Sprites.map.missile.w/2,
-                                      this.y + this.h, 
+                                      this.y +100, 
                                      { dy: 100 });
       }
 }
@@ -113,6 +113,9 @@ Player.prototype.draw = function(canvas) {
 Player.prototype.die = function() {
   GameAudio.play('die');
   Game.callbacks['die']();
+ deathsong.play();
+  music.pause();
+  music.currentTime - 0.0;
 }
 
 //This is where the right and left keys are configured to move the space ship.
@@ -140,6 +143,10 @@ Player.prototype.step = function(dt) {
   }
   return true;
 }
+
+
+
+
 
 //
 
