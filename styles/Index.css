@@ -1,17 +1,28 @@
 @font-face {
-    font-family: 'sf_distant_galaxyregular';
-    src: url('sf_distant_galaxy-webfont.eot');
-    src: url('sf_distant_galaxy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('sf_distant_galaxy-webfont.woff') format('woff'),
-         url('sf_distant_galaxy-webfont.ttf') format('truetype'),
-         url('sf_distant_galaxy-webfont.svg#sf_distant_galaxyregular') format('svg');
+    font-family: 'galaxy';
+    src: url('../fonts/galaxy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
 
 
+html {
+	
+	
+	background: black;	
+	
+}
 
+#description {
+	
+	width: 650px;
+	height: 300px;
+	background: red;
+	margin: 30px auto 0 auto;	
+	
+	
+}
 
 
 #gameboard { 
@@ -32,9 +43,24 @@ background-repeat: repeat-y;
 
 #game-wrapper { 
 
-margin:50px auto; 
-width: 800px; 
+width: 650px; 
+height: 350px;
+background: red;
 
 }
 
+#arcade-wrapper {
+
+padding-top: 150px;
+padding-left: 156px;
+height: 768px;
+width: 961px;
+margin: 100px auto;
+
+background-image:url(../images/arcade_machine.png);
+background-repeat: none;
+background-size: 100%;
+box-sizing: border-box;
+
+}
 
