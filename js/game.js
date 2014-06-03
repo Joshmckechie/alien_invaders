@@ -91,7 +91,10 @@ Alien.prototype.step = function(dt) {
 Alien.prototype.fireSometimes = function() {
       if(Math.random()*100 < 30) {
         this.board.addSprite('missile',this.x + this.w/2 - Sprites.map.missile.w/2,
-                                      this.y +100, 
+                                      
+									  // This is where the missiles spawn with reference to the alien
+									  
+									  this.y +50, 
                                      { dy: 100 });
       }
 }
