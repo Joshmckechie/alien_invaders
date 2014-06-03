@@ -52,6 +52,10 @@ var GameScreen = function GameScreen(text,text2,callback) {
     if(Game.keys['fire'] && callback) callback();
   };
 
+window.onkeydown = function(e) { 
+  return !(e.keyCode == 32);
+};
+
   this.render = function(canvas) {
     canvas.clearRect(0,0,Game.width,Game.height);
     canvas.font = "bold 40px galaxy";
