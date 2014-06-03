@@ -29,7 +29,6 @@ var AlienFlock = function AlienFlock() {
     }
     this.dx = this.speed * this.hit;
 
-//Not sure what this is
 
     var max = {}, cnt = 0;
     this.board.iterate(function() {
@@ -50,7 +49,6 @@ var AlienFlock = function AlienFlock() {
 }
 
 
-//Not sure what this is
 
 var Alien = function Alien(opts) {
   this.flock = opts['flock'];
@@ -150,7 +148,7 @@ Player.prototype.step = function(dt) {
 
 
 
-//
+
 
 var Missile = function Missile(opts) {
    this.dy = opts.dy;

@@ -52,9 +52,13 @@ var GameScreen = function GameScreen(text,text2,callback) {
     if(Game.keys['fire'] && callback) callback();
   };
 
+//This is so the space bar wont scroll down the page
+
 window.onkeydown = function(e) { 
   return !(e.keyCode == 32);
 };
+
+//This is where I defined the text for the game canvas
 
   this.render = function(canvas) {
     canvas.clearRect(0,0,Game.width,Game.height);
