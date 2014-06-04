@@ -1,4 +1,16 @@
-A Simple HTML5 Game To-be used in a Tutorial
 
-Slides up at:
-http://www.slideshare.net/cykod/html5-game-development-introduction-5815787
+Instructions for ‘Space Wars’
+
+
+The Game—>
+
+The idea of the game is to destroy the stormtroopers and Sith lords that are attacking your home planet. There are 4 levels to complete and it is up to your character, the last Jedi in the galaxy, to defeat them.
+
+Controls—>
+
+Spacebar - This allows the player to fire green, lightsaber type missiles to try and destroy the aliens and win the game. You can hold this down for a burst fire or tap it to gain a single shot.
+          - Spacebar also starts the game and restarts it when you win/lose.
+
+Left Arrow - This allows the player to move left across the canvas until you reach the edge of the game parameter and must move right.
+
+Right Arrow - This allows the player to move right across the canvas until you reach the edge of the game parameter and must move left.
