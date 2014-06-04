@@ -9,9 +9,12 @@ var Game = new function() {
     this.width = $(this.canvas_elem).attr('width');
     this.height= $(this.canvas_elem).attr('height');
 
+  
+
     $(window).keydown(function(event) {
       if(KEY_CODES[event.keyCode]) Game.keys[KEY_CODES[event.keyCode]] = true;
     });
+
 
     $(window).keyup(function(event) {
       if(KEY_CODES[event.keyCode]) Game.keys[KEY_CODES[event.keyCode]] = false;
