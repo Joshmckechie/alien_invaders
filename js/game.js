@@ -149,11 +149,11 @@ Player.prototype.step = function(dt) {
 
 
 
-
 var Missile = function Missile(opts) {
    this.dy = opts.dy;
    this.player = opts.player;
 }
+
 
 //This allows the laser to be fired and draw the missiles from the sprite sheet.
 

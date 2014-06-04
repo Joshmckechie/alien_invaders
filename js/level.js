@@ -62,6 +62,7 @@
   }
 
 
+//This is where you link the music files you want to use
 
 var music = new Audio('media/Imperial_march.mp3')
 var deathsong = new Audio('media/Die_song.mp3')

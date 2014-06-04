@@ -1,4 +1,5 @@
-var Game = new function() {                                                                  
+var Game = new function() {   
+//This is the key codes for what buttons each movement is linked to                                                                
   var KEY_CODES = { 37:'left', 39:'right', 32 :'fire' };
   this.keys = {};
 
@@ -33,6 +34,8 @@ var Game = new function() {
 var Sprites = new function() {
   this.map = { }; 
 
+//This is where you link your sprite sheet so that the game can run with your characters
+
   this.load = function(sprite_data,callback) { 
     this.map = sprite_data;
     this.image = new Image();
@@ -58,7 +61,7 @@ window.onkeydown = function(e) {
   return !(e.keyCode == 32);
 };
 
-//This is where I defined the text for the game canvas
+//This is where I defined the font for the game canvas
 
   this.render = function(canvas) {
     canvas.clearRect(0,0,Game.width,Game.height);
